@@ -23,7 +23,7 @@ const Cart = () => {
      
 
       {products.length === 0 ? (
-        <div>
+        <div className="cartContainer">
           <p className="emptyCart">Your cart is empty 😔</p>
           <p className="emptyCart">
             Oops! It seems like your cart is feeling a bit light at the moment.

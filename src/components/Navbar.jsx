@@ -1,23 +1,26 @@
-import { useSelector } from "react-redux"
-import { Link } from "react-router-dom"
-
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-
-  const items = useSelector((state) => state.cart)
+  const items = useSelector((state) => state.cart);
 
   return (
-      <div className="navWrapper">
-          <span>Redux store</span>
+    <div className="navWrapper">
+      <Link className="navLink" to="/">
+        <span>REDUX STORE</span>
+      </Link>
 
-
-          <div>
-              <Link className="navLink" to="/" >Home</Link>
-              <Link className="navLink" to="/cart" >Cart</Link>
-          </div>
-      <span className="cart-count">cart items: {items.length }</span>
+      <div>
+        <Link className="navLink" to="/">
+          Home
+        </Link>
+        <Link className="navLink" to="/cart">
+          Cart
+        </Link>
+      </div>
+      <span className="cart-count">cart items: {items.length}</span>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

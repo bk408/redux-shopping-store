@@ -93,6 +93,11 @@ body {
  text-align: center;
  font-size: large;
  font: bold;
+
+}
+
+.cartContainer{
+  margin-top: 100px;
 }
 
 .emptybtn{
